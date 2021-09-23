@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+ FarFarAway v1.0 (https://github.com/giusniyyel/farfaraway)
+ Copyright 2021 José Daniel Bautista Campos
+ Licensed under MIT (https://github.com/giusniyyel/farfaraway/blob/master/LICENSE)
+ -->
+<html>
+<head>
+	<title>Registro &mdash; FarFarAway</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<!--===============================================================================================-->
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login">
+			<div class="wrap-register p-l-50 p-r-50 p-t-77 p-b-30">
+				<form class="validate-form" action="register.php" method="POST">
+					 
+					<span class="form-title p-b-55">
+						Registro
+					</span>
+
+					<div class="wrap-input validate-input m-b-16" data-validate = "Por favor rellene el campo">
+						<input class="input" type="text" id="name" name="name" placeholder="Nombre">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<span class="lnr lnr-user"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input validate-input m-b-16" data-validate = "Por favor rellene el campo">
+						<input class="input" type="text" id="lastname" name="lastname" placeholder="Apellido">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<span class="lnr lnr-text-format"></span>
+						</span>
+					</div>
+
+          
+					<div class="wrap-input validate-input m-b-16" data-validate = "Por favor rellene el campo">
+						<input class="input" type="text" id="email" name="email" placeholder="Correo Electrónico">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input validate-input m-b-16" data-validate = "Por favor rellene el campo">
+						<input class="input" type="password" id="password" name="password" placeholder="Contraseña">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<span class="lnr lnr-lock"></span>
+						</span>
+					</div>
+
+					<div class="contact-form-checkbox m-l-4">
+						<input class="input-checkbox" id="ckb1" type="checkbox" name="terms">
+						<label class="label-checkbox" for="ckb1">
+							Acepto los <a href="#">Terminos del servicio</a>
+						</label>
+					</div>
+
+					<div class="row" id="load" hidden="hidden">
+                		<div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-5">
+                  			<img src="img/load.gif" width="100%" alt="">
+                		</div>
+                		<div class="col-xs-12 center text-accent">
+                  			<span>Validando información...</span>
+                		</div>
+              		</div>
+
+					<div class="container-form-btn p-t-25">
+						<input class="form-btn" type="submit" name="submit" value="Registrarme">
+					</div>
+					
+					<div class="text-center w-full p-t-30">
+						<span class="txt1">
+							¿Ya tienes una cuenta?
+						</span>
+
+						<a class="txt1 bo1 hov1" href="login.html">
+							Iniciar Sesión						
+						</a>
+					</div>
+                  
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--===============================================================================================-->	
+	<script src="js/jquery.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/operaciones.js"></script>
+	<!--===============================================================================================-->
+ 	<script src="js/sweetalert.min.js"></script>
+ 	<!--===============================================================================================-->
+ 	<script src="js/validate.js"></script>
+ 	<!--===============================================================================================-->
+</body>
+</html>

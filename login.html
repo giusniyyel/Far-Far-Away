@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+ FarFarAway v1.0 (https://github.com/giusniyyel/farfaraway)
+ Copyright 2021 José Daniel Bautista Campos
+ Licensed under MIT (https://github.com/giusniyyel/farfaraway/blob/master/LICENSE)
+ -->
+<html>
+  <head>
+    <title>Inicio de Sesión &mdash; FarFarAway</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    <div class="limiter">
+      <div class="container-login">
+        <div class="wrap-login p-l-50 p-r-50 p-t-77 p-b-30">
+          <form
+            class="login-form validate-form"
+            method="POST"
+            action="login.php"
+          >
+            <span class="form-title p-b-55"> Iniciar Sesión </span>
+
+            <div
+              class="wrap-input validate-input m-b-16"
+              data-validate="Ingrese un correo válido"
+            >
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Correo Electrónico"
+              />
+              <span class="focus-input"></span>
+              <span class="symbol-input">
+                <span class="lnr lnr-envelope"></span>
+              </span>
+            </div>
+
+            <div
+              class="wrap-input validate-input m-b-16"
+              data-validate="Introduzca la contraseña"
+            >
+              <input
+                class="input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Contraseña"
+              />
+              <span class="focus-input"></span>
+              <span class="symbol-input">
+                <span class="lnr lnr-lock"></span>
+              </span>
+            </div>
+
+            <div class="contact-form-checkbox m-l-4">
+              <input
+                class="input-checkbox"
+                id="ckb1"
+                type="checkbox"
+                name="remember-me"
+              />
+              <label class="label-checkbox" for="ckb1"> Recordarme </label>
+            </div>
+
+            <div class="container-form-btn p-t-25">
+              <button class="form-btn" id="login">Iniciar Sesión</button>
+            </div>
+
+            <div class="text-center w-full p-t-30">
+				<span class="txt1"> Primera vez en FarFarAway? </span>
+
+              <a class="txt1 bo1 hov1" href="register.html"> Registrarse </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="js/jquery.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/validate.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/operaciones.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+  </body>
+</html>
